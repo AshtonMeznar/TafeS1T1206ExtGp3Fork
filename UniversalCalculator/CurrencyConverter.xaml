@@ -1,0 +1,75 @@
+﻿<Page
+    x:Class="Calculator.CurrencyConverter"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Calculator"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+	<Grid>
+
+		<!-- Title -->
+		<TextBlock Text="Currency Converter"
+               FontSize="40"
+               Foreground="White"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Top"
+               Margin="0,40,0,0"/>
+
+		<!-- Converter Panel -->
+		<StackPanel HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Width="350"
+                Spacing="15">
+
+			<!-- Amount -->
+			<TextBox x:Name="AmountBox"
+                 Height="45"
+                 FontSize="18"
+                 Padding="10"
+                 Text="Enter Amount"/>
+
+			<!-- From Currency -->
+			<ComboBox x:Name="FromCurrency"
+                  Height="45"
+                  FontSize="18">
+				<ComboBoxItem Content="USD"/>
+				<ComboBoxItem Content="EUR"/>
+				<ComboBoxItem Content="GBP"/>
+				<ComboBoxItem Content="INR"/>
+			</ComboBox>
+
+			<!-- To Currency -->
+			<ComboBox x:Name="ToCurrency"
+                  Height="45"
+                  FontSize="18">
+				<ComboBoxItem Content="USD"/>
+				<ComboBoxItem Content="EUR"/>
+				<ComboBoxItem Content="GBP"/>
+				<ComboBoxItem Content="INR"/>
+			</ComboBox>
+
+			<!-- Convert Button -->
+			<Button Content="Convert"
+                Height="45"
+                FontSize="18"
+                Click="Convert_Click"/>
+
+			<!-- Result -->
+			<TextBlock x:Name="ResultText"
+                   FontSize="22"
+                   Foreground="White"
+                   Margin="0,20,0,0"
+                   TextAlignment="Center"/>
+			<TextBlock x:Name="RateText"
+				   FontSize="22"
+				   Foreground="White"
+				   Margin="0,20,0,0"
+				   TextAlignment="Center"/>
+
+		</StackPanel>
+
+	</Grid>
+</Page>
