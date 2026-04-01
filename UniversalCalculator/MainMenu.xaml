@@ -13,7 +13,7 @@
 		<TextBlock x:Name="universalCalcTextBlock" HorizontalAlignment="Left" Height="72" Margin="358,254,0,0" TextWrapping="Wrap" Text="Universal Calculator" VerticalAlignment="Top" Width="578" FontSize="60" FontWeight="Bold"/>
 		<Button x:Name="mathsCalcutorButton" Content="Maths Calculator" Margin="0,341,0,0" VerticalAlignment="Top" FontSize="40" Background="#FFACACAC" Height="74" Width="404" HorizontalAlignment="Center" Click="mathsCalcutorButton_Click"/>
 		<Button x:Name="mortgageCalcutorButton" Content="Mortgage Calculator" FontSize="40" Background="#FFACACAC" Height="70" Width="403" Click="mortgageCalcutorButton_Click" Margin="0,421,0,0" VerticalAlignment="Top" HorizontalAlignment="Center"/>
-		<Button x:Name="currencyCalcutorButton" Content="Currency Calculator" Margin="0,496,0,0" FontSize="40" Background="#FFACACAC" Height="70" Width="403" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+		<Button x:Name="currencyCalcutorButton" Content="Currency Calculator" Margin="0,496,0,0" FontSize="40" Background="#FFACACAC" Height="70" Width="403" VerticalAlignment="Top" HorizontalAlignment="Center" Click="currencyCalcutorButton_Click"/>
 		<Button x:Name="mainMenuExitButton" Content="Exit" Margin="0,640,0,0" VerticalAlignment="Top" FontSize="40" Background="#FFACACAC" Width="403" Height="70" HorizontalAlignment="Center"/>
 
 	</Grid>
