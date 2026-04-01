@@ -31,6 +31,7 @@ namespace Calculator
 			{
 				if (rootFrame.Content == null)
 					rootFrame.Navigate(typeof(MainMenu), e.Arguments);
+
 				Window.Current.Activate();
 			}
 		}
